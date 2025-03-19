@@ -1,0 +1,376 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/mariamagoulioti/python/blob/main/%CE%91%CE%BD%CF%84%CE%AF%CE%B3%CF%81%CE%B1%CF%86%CE%BF_exercise1_ipynb1.ipynb123\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## Άσκηση 1\n",
+        "\n",
+        "Δημιουργήστε τις παρακάτω μεταβλητές:\n",
+        "- όνομα\n",
+        "- επώνυμο\n",
+        "- αριθμός μητρώου\n",
+        "- μάθημα 1\n",
+        "- μάθημα 2\n",
+        "- μάθημα 3\n",
+        "- βαθμός μαθήματος 1\n",
+        "- βαθμός μαθήματος 2\n",
+        "- βαθμός μαθήματος 3\n",
+        "\n",
+        "Σε κάθε μεταβλητή δώστε το κατάλληλο όνομα (με αγγλικούς χαρακτήρες) και την αντίστοιχη τιμή, με το σωστό τύπο δεδομένων (string / integer).\n",
+        "\n",
+        "Τυπώστε στην οθόνη (print) τις τιμές όλων των μεταβλητών που ορίσατε.\n",
+        "\n",
+        "**Hints**:\n",
+        "- όπου η τιμή είναι αριθμός, σκεφτείτε αν θα χρησιμοποιήσετε stirng ή integer, ανάλογα με το αν χρειάζεται να κάνετε αργότερα αριθμητικές πράξεις\n",
+        "- χρησιμοποιήστε ονόματα μεταβλητών που να έχουν νόημα\n",
+        "- εάν γράψετε όλες τις εντολές σε ένα κελί, όταν φτάσετε στο τέλος στο σημείο να γράψετε την εντολή `print`, το colab θα σας προτείνει να γράψετε μέσα στις παρενθέσεις όλες τις μεταβλητές. Πατήστε `tab` για να αποδεχτείτε την πρόταση που σας κάνει."
+      ],
+      "metadata": {
+        "id": "JZISjhuEQFOB"
+      }
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "cRnQhimEPhY0",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "224254ef-2e8f-432f-b744-309461f08532"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Maria\n",
+            "Magoulioti\n",
+            "2100075\n",
+            "Computational data journalism\n",
+            "Istoria ton MME\n",
+            "Organosiaki Epikoinonia\n",
+            "10\n",
+            "6\n",
+            "9\n"
+          ]
+        }
+      ],
+      "source": [
+        "Name = \"Maria\" #string\n",
+        "Surname = \"Magoulioti\" #string\n",
+        "AM = 2100075 #integer\n",
+        "mathima1 = \"Computational data journalism\" #string\n",
+        "mathima2 = \"Istoria ton MME\" #string\n",
+        "mathima3 =\"Organosiaki Epikoinonia\" #string\n",
+        "grade1 = 10 #integer\n",
+        "grade2 = 6 #integer\n",
+        "grade3 = 9 #integer\n",
+        "\n",
+        "print(Name)\n",
+        "print(Surname)\n",
+        "print(AM)\n",
+        "print(mathima1)\n",
+        "print(mathima2)\n",
+        "print(mathima3)\n",
+        "print(grade1)\n",
+        "print(grade2)\n",
+        "print(grade3)"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## Άσκηση 2\n",
+        "\n",
+        "Υπολογίστε το μέσο όρο των βαθμών των 3 μαθημάτων, αποθηκεύστε τον σε μια μεταβλητή και τυπώστε την τιμή της μεταβλητής του μέσου όρου στην οθόνη.\n",
+        "\n",
+        "**Hints**:\n",
+        "- ο μέσος όρος υπολογίζεται με τη φόρμουλα: <άθροισμα επιμέρους τιμών> δια <πλήθος τιμών>\n",
+        "- για τον υπολογισμό του αθροίσματος των επιμέρους τιμών χρησιμοποιήστε τα ονόματα των μεταβλητών των επιμέρους τιμών και όχι τις τιμές τους"
+      ],
+      "metadata": {
+        "id": "uPD0W-qcWcfV"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "average_grade = (grade1 + grade2 + grade3)/3\n",
+        "print( average_grade)"
+      ],
+      "metadata": {
+        "id": "Z0OnhXMURzMR",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "71892950-2e6a-4d7b-dd46-5c1528a6bd55"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "8.333333333333334\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Τυπώστε στην οθόνη τον τύπο δεδομένων της μεταβλητής του μέσου όρου."
+      ],
+      "metadata": {
+        "id": "3lDi2k3iYoWe"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(type(average_grade))"
+      ],
+      "metadata": {
+        "id": "ET5xvgxTZAJb",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "f461e211-fd33-4ee4-eb0f-e3ad01f80750"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "<class 'float'>\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Μετατρέψτε το μέσο όρο σε ακέραιο (integer) και τυπώστε το αποτέλεσμα στην οθόνη."
+      ],
+      "metadata": {
+        "id": "y-QK_9DmZHAF"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "average_grade_int = int(average_grade)\n",
+        "print(average_grade_int)"
+      ],
+      "metadata": {
+        "id": "VV13wQMoR69T",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "7ae8be40-9758-4b88-b199-b59f98578061"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "8\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## Άσκηση 3\n",
+        "\n",
+        "Δημιουργήστε ένα νέο κελί κώδικα.\n",
+        "\n",
+        "Μέσα στο κελί γράφει: Start coding or generate with AI. Πατήστε τη λέξη generate.\n",
+        "\n",
+        "Στο κελί Generate που εμφανίζεται γράψτε ένα prompt με το οποίο να του ζητάτε να αλλάξει τη μεταβλητή grade1 σε 5 και να ξαναϋπολογίσει και να τυπώσει τον μέσο όρο."
+      ],
+      "metadata": {
+        "id": "1dhIvNXCecFf"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# prompt: grade1 = 5\n",
+        "\n",
+        "grade1 = 5\n",
+        "average_grade = (grade1 + grade2 + grade3)/3\n",
+        "average_grade\n"
+      ],
+      "metadata": {
+        "id": "Qqvc9WWYVLYH",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "448baad4-3767-454f-d67c-e850eef37a03"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "6.666666666666667"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 9
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "average_grade_int = int(average_grade)\n",
+        "print(average_grade_int)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "cM4KxjfYPf-q",
+        "outputId": "86e7d111-9dd2-4112-9fc5-e3639a12d19a"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "6\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## Άσκηση 4\n",
+        "\n",
+        "Φτιάξτε μια λίστα με όνομα actorsL και βάλτε μέσα στη λίστα τα ονοματεπώνυμα 3 αγαπημένων σας ηθοποιών.\n",
+        "\n",
+        "Χρησιμοποιώντας το index, τυπώστε στην οθόνη:\n",
+        "- το 2ο ονοματεπώνυμο της λίστας\n",
+        "- το τελευταίο ονοματεπώνυμο της λίστας\n",
+        "- τα 2 πρώτα ονοματεπώνυμα"
+      ],
+      "metadata": {
+        "id": "_BaLrQrqV3jw"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "actorsL = [\"Yannis Bezos\" , \"Martha Vourtsi\", \"Ilias Meletis\"]"
+      ],
+      "metadata": {
+        "id": "J8U-TfzMXVkx"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(actorsL[1])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "MLF5pl2pQr57",
+        "outputId": "2bd41de4-d990-4a51-afff-ccce21fb841c"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Martha Vourtsi\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(actorsL[2])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "d3J6-dEJQ7R0",
+        "outputId": "406a52e2-58d6-43cc-f7d7-c0f9eaad8bf1"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Ilias Meletis\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(actorsL[0] , actorsL[1])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "KFFT6IG4RBrf",
+        "outputId": "c0ad1d53-8fe9-4b5e-b15c-19665a976f0b"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Yannis Bezos Martha Vourtsi\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
